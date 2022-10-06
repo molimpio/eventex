@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 from django.core import mail
 from django.test import TestCase
 

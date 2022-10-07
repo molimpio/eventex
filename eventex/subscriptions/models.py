@@ -10,6 +10,7 @@ class Subscription(models.Model):
     phone = models.CharField('telefone', max_length=20)
     created_at = models.DateTimeField('criado em', auto_now_add=True)
     url_identity = models.UUIDField(default=uuid4())
+    paid = models.BooleanField('pago', default=False)
 
     class Meta:
         verbose_name_plural = 'inscrições'
